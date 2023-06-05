@@ -2,16 +2,16 @@ pipeline {
     agent any
     environment {
         VERSION = "${env.BUILD_ID}"
-        AWS_ACCOUNT_ID="549350785115"
+        AWS_ACCOUNT_ID="093390870899"
         AWS_DEFAULT_REGION="us-east-1"
         IMAGE_REPO_NAME="jenkins-pipeline"
         IMAGE_TAG= "${env.BUILD_ID}"
-        REPOSITORY_URI = "549350785115.dkr.ecr.us-east-1.amazonaws.com/jenkins-pipeline"
+        REPOSITORY_URI = "093390870899.dkr.ecr.us-east-1.amazonaws.com/jenkins-pipeline"
     }
     stages {
         stage('Git checkout') {
             steps {
-                git 'https://github.com/tkibnyusuf/realone-repo.git'
+                git 'https://github.com/Olatunjym/Eks-new.git'
             }
         }
         
